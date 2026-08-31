@@ -11,7 +11,11 @@ while True:
 
     while True:
 
-        guess = int(input("Enter your guess: "))
+        try:
+            guess = int(input("Enter your guess: "))
+        except ValueError:
+            print("Please enter a number!")
+            continue
 
         if 0 < guess <= 100:
 
