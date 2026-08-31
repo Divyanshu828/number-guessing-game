@@ -30,7 +30,6 @@ while True:
             else:
                 print(f"You got it in {i} guesses!")
 
-                # Best score tracker
                 if best_score is None or i < best_score:
                     best_score = i
                     print("🎉 New best score!")
@@ -39,8 +38,15 @@ while True:
 
                 break
 
+            # Give a hint after 3 wrong guesses
+            if i == 3:
+                if number > 50:
+                    print("💡 Hint: The number is greater than 50.")
+                else:
+                    print("💡 Hint: The number is 50 or less.")
+
         else:
-            print("Error: Please give number between 1 and 100")
+            print("Error: Please give a number between 1 and 100")
 
     again = input("Play again? (y/n): ")
 
