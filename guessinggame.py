@@ -1,6 +1,6 @@
 import random
 
-print("Start small. Ship something.")
+print("🎯 Welcome to the Number Guessing Game!")
 
 best_score = None
 
