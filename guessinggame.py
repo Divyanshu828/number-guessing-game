@@ -32,7 +32,7 @@ while True:
 
                 if best_score is None or i < best_score:
                     best_score = i
-                    print("🎉 New best score!")
+                    print("Congrates🎉 Your New best score!")
 
                 print(f"Best score: {best_score} guesses")
 
